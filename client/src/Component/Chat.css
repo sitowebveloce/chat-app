@@ -1,0 +1,118 @@
+
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #f7e7e7;
+}
+a{
+    text-decoration: none;
+}
+.chat-content{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.chat-messages{
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    bottom: 0;
+    /* overflow-y: scroll; */
+}
+.chat-users{
+    color: purple;
+}
+.chat-input-msg{
+  width: 100%;
+}
+
+.input-msg {
+    width: 100%;
+    padding: 5px;
+    /* flex: 1; */
+}
+
+.chat-messages{
+   max-height: 300px;
+   max-width: 400px;
+   width: 400px;
+   height: 300px;
+}
+.div-messages{
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+
+}
+.div-message{
+    display: block;
+    text-align: center;
+    background-color: var(--error-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    min-height: 70px;
+    height: 70px;
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+}
+.div-message.hide {
+    opacity: 0;
+}
+
+.chat-time{
+    color: black;
+    font-weight: 800;
+    font-size: 0.8rem;
+
+}
+.messages{
+    color: purple;
+    font-weight: 800;
+    font-size:0.9rem;
+}
+
+.message{
+    color: purple;
+    font-weight: 800;
+    font-size:0.9rem;
+}
+
+.text{
+    color: rgb(83, 81, 81);
+   font-size:0.9rem;
+}
+
+.chat-exit-btn{
+    border: none;
+    color: #ffffff;
+    background: rgb(248, 99, 144);
+    padding: 7px 13px;
+    border-radius: 2px;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+.chat-exit-btn:hover{
+    transform : scale(0.98)
+}
+
+img.chat-flag{
+    width: 40px;
+    border-radius: 2px;
+}
+
+@media(max-width:700px){
+    .chat-left{
+        display: none;
+    }
+    .chat-right{
+        margin: 10px;
+    }
+}

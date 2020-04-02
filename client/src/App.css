@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100vh;
+}
+
+
+.chat-title{
+  color: purple;
+  font-size: 2.4rem;
+}
